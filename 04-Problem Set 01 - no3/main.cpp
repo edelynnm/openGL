@@ -81,7 +81,7 @@ int main() {
 
 	GLfloat vertices2[] =
 	{
-		-0.75f, -0.75f, 0.0f, // bottom left //0.0f, -0.75f, 0.0f, //bottom center
+		0.0f, -0.75f, 0.0f, //bottom center
 		0.75f, -0.75f, 0.0f, // bottom right
 		0.75f / 2, 0.5f, 0.0f, // top right
 	};

@@ -10,14 +10,6 @@ const char* vertexShaderSource = "#version 330 core\n"
 "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
 "}\0";
 
-// Vertex Shader source code
-const char* vertexShaderSource2 = "#version 330 core\n"
-"layout (location = 0) in vec3 aPos;\n"
-"void main()\n"
-"{\n"
-"   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-"}\0";
-
 //Fragment Shader source code
 const char* fragmentShaderSource = "#version 330 core\n"
 "out vec4 FragColor;\n"
@@ -109,7 +101,7 @@ int main() {
 
 	//Create vertex shader object
 	GLuint shaderProgram = createShaderProgram(vertexShaderSource, fragmentShaderSource);
-	GLuint shaderProgram2 = createShaderProgram(vertexShaderSource2, fragmentShaderSource2);
+	GLuint shaderProgram2 = createShaderProgram(vertexShaderSource, fragmentShaderSource2);
 
 
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);

@@ -1,6 +1,7 @@
 #include<iostream>
 #include<glad/glad.h>
 #include<GLFW/glfw3.h>
+#include <cmath>
 
 #include"shaderClass.h"
 
@@ -71,6 +72,10 @@ int main() {
 
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
+	float height = 1.0f;
+	float speed = 8.0f;
+
+	float offsetValue;
 	// While GLFW window is not terminated
 	while (!glfwWindowShouldClose(window))
 	{
@@ -87,15 +92,21 @@ int main() {
 
 		// Draw triangle
 		shaderProgram.use();
-		/*float timeValue = glfwGetTime();
-		float offsetValue = ((sin(timeValue * 5.0f)) / 2.0f);
-		std::cout << offsetValue << "\n";
+		float timeValue = glfwGetTime();
 
-		shaderProgram.setFloat("offset", 0);*/
+		offsetValue = (pow(sin(timeValue * speed), 2) * height);
+
+		shaderProgram.setFloat("offset", offsetValue);
+		if (offsetValue < 0.0005) {
+			height -= 0.005f;
+		}
+
+		if (height < 0.05) {
+			speed = 0;
+		}
 
 		glBindVertexArray(VAO);
 		glDrawArrays(GL_TRIANGLES, 0, 3);
-
 
 		// Swap the back buffer with the front buffer
 		glfwSwapBuffers(window);

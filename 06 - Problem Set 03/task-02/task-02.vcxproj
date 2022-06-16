@@ -73,16 +73,16 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\school\3rd-year\Comp Graphics\OpenGL Template\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\school\3rd-year\Comp Graphics\OpenGL Template\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\school\3rd-year\Comp Graphics\Exercises\06 - Problem Set 03\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\school\3rd-year\Comp Graphics\Exercises\06 - Problem Set 03\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\school\3rd-year\Comp Graphics\OpenGL Template\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\school\3rd-year\Comp Graphics\OpenGL Template\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\school\3rd-year\Comp Graphics\Exercises\06 - Problem Set 03\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\school\3rd-year\Comp Graphics\Exercises\06 - Problem Set 03\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
